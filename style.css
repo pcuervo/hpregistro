@@ -385,6 +385,7 @@ figure {
 /* line 138, style.less */
 .width {
   width: 90%;
+  min-width: 300px;
   margin: 0 auto 20px auto;
 }
 /* line 140, style.less */
@@ -555,50 +556,54 @@ h4 {
   margin: 0;
 }
 /*** FOOTER ***/
+/* line 201, style.less */
+input[type='submit'] {
+  cursor: pointer;
+}
 /*** MEDIA QUERIES ***/
 @media only screen and (max-width: 1024px) {
   
 }
 @media only screen and (max-width: 768px) {
-  /* line 209, style.less */
+  /* line 212, style.less */
   .c-10.right {
     width: 97.6%;
   }
-  /* line 212, style.less */
+  /* line 215, style.less */
   .instrucciones h2 {
     width: 47.8% !important;
     float: none;
     margin: 0 auto 20px auto;
   }
-  /* line 213, style.less */
+  /* line 216, style.less */
   .instrucciones .subtitulo {
     margin: 0;
     text-align: center;
   }
-  /* line 218, style.less */
+  /* line 221, style.less */
   form .renglon > .c-2 {
     width: 47.8%;
     margin-bottom: 20px;
   }
-  /* line 219, style.less */
+  /* line 222, style.less */
   form .renglon > .c-2 > .c-10 {
     width: 81%;
   }
-  /* line 221, style.less */
+  /* line 224, style.less */
   form .renglon > .c-1 {
     width: 14.6%;
   }
-  /* line 222, style.less */
+  /* line 225, style.less */
   form .renglon > .c-5 {
     width: 31.2%;
   }
-  /* line 226, style.less */
+  /* line 229, style.less */
   form .acepto {
     width: 47.8%;
     margin: 0 auto 20px auto;
     text-align: center;
   }
-  /* line 228, style.less */
+  /* line 231, style.less */
   form input[type='submit'] {
     display: block;
     margin: auto;
@@ -606,12 +611,12 @@ h4 {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 235, style.less */
+  /* line 238, style.less */
   .fourth {
     width: 50% !important;
     margin-bottom: 20px;
   }
-  /* line 238, style.less */
+  /* line 241, style.less */
   form input[type='submit'] {
     width: 47.8%!important;
   }
