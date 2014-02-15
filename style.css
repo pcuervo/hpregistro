@@ -1,0 +1,144 @@
+@charset 'utf-8';
+/* Utilities */
+/* line 4, style.less */
+.lst_reset,
+.lst_reset li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 5, style.less */
+.clear {
+  clear: both;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+  line-height: 0;
+}
+/* line 6, style.less */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* clearfix for modern browsers */
+/* line 13, style.less */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 15, style.less */
+.clearfix:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+/* line 17, style.less */
+.clearfix {
+  zoom: 1;
+}
+/*** FONTFACE ***/
+/*** VARIABLES ***/
+/*** MIXINS ***/
+/*** FRAMEWORK ***/
+/* line 36, style.less */
+.full {
+  width: 100%;
+}
+/* line 37, style.less */
+.width {
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+/* line 39, style.less */
+.left {
+  float: left !important;
+}
+/* line 40, style.less */
+.right {
+  float: right !important;
+}
+/* line 42, style.less */
+.first {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 43, style.less */
+.last {
+  margin-right: 0;
+  padding-right: 0;
+}
+/* line 46, style.less */
+.columna {
+  float: left;
+  margin: 0 1%;
+}
+/* line 50, style.less */
+.columna.c-1 {
+  width: 6.3%;
+}
+/* line 51, style.less */
+.columna.c-2 {
+  width: 14.6%;
+}
+/* line 52, style.less */
+.columna.c-3 {
+  width: 22.9%;
+}
+/* line 53, style.less */
+.columna.c-4 {
+  width: 31.2%;
+}
+/* line 54, style.less */
+.columna.c-5 {
+  width: 39.5%;
+}
+/* line 55, style.less */
+.columna.c-6 {
+  width: 47.8%;
+}
+/* line 56, style.less */
+.columna.c-7 {
+  width: 56.1%;
+}
+/* line 57, style.less */
+.columna.c-8 {
+  width: 64.4%;
+}
+/* line 58, style.less */
+.columna.c-9 {
+  width: 72.7%;
+}
+/* line 59, style.less */
+.columna.c-10 {
+  width: 81%;
+}
+/* line 60, style.less */
+.columna.c-11 {
+  width: 89.3%;
+}
+/* line 61, style.less */
+.columna.c-12 {
+  width: 97.6%;
+}
+/* line 63, style.less */
+.columna.grid {
+  background: #1aa2dc;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+/* line 66, style.less */
+p {
+  margin-bottom: 1em;
+}
+/*** GENERAL ***/
+/* line 71, style.less */
+body {
+  background: #fff;
+}
+/*** HEADER ***/
+/*** FOOTER ***/
