@@ -129,12 +129,10 @@ figure {margin: 0;}
 
 /*** FRAMEWORK ***/
 
-.full{ width: 100% !important; }
-.half{ width: 50% !important; float: left; }
-.third{ width: 33% !important; float: left; }
-.fourth{ width: 25% !important; float: left; }
-.fifth{ width: 20% !important; float: left; }
+//propiedades
+.hide{ display: none; }
 
+//layout
 .width{ width: 90%; min-width: 300px; margin: 0 auto @margen auto; }
 
 .left{ float: left !important; }
@@ -142,7 +140,6 @@ figure {margin: 0;}
 
 .first{ margin-left: 0; padding-left: 0; }
 .last{ margin-right: 0; padding-right: 0; }
-
 
 .columna{
 	float: left;
@@ -162,6 +159,26 @@ figure {margin: 0;}
 	&.c-12{ width: 97.6%; }
 
 	&.grid{ background: @highlight; color: @claro; padding: @margen; text-align: center; }
+
+	img{ width: 100%; height: auto; margin: 0 0 @margen 0; }
+
+}
+
+.span{ float: left;
+	&.c-1{ width: 8.3%; }
+	&.c-2{ width: 16.6%; }
+	&.c-3{ width: 24.9%; }
+	&.c-4{ width: 33.2%; }
+	&.c-5{ width: 41.5%; }
+	&.c-6{ width: 49.8%; }
+	&.c-7{ width: 58.1%; }
+	&.c-8{ width: 66.4%; }
+	&.c-9{ width: 74.7%; }
+	&.c-10{ width: 83%; }
+	&.c-11{ width: 91.3%; }
+	&.c-12{ width: 99.6%; }
+
+	img{ width: 100%; height: auto; margin: 0 0 @margen 0; }
 }
 
 p{ margin-bottom: 1em; }
@@ -175,11 +192,11 @@ body{ background: #fff; .hp; }
 
 .renglon{ margin: 0 0 @margen 0; }
 
-input{ border: none; border-bottom: 1px solid @highlight; .hp( 16px, 16px, 'hp regular' );
+input{ margin-bottom: 4px; border: none; border-bottom: 1px solid @highlight; .hp( 16px, 16px, 'hp regular' );
 	&:focus{ outline: none; }
 }
 
-label{ color: @medio; .hp( 14px, 14px, 'hp light' ); text-transform: lowercase; }
+label{ color: @medio; .hp( 14px, 14px, 'hp light' ); }
 
 hr{ margin: 0; border: 0; height: 1px; background: @highlight;}
 
