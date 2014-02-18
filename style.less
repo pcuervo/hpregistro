@@ -135,6 +135,7 @@ figure {margin: 0;}
 //layout
 .width{ width: 90%; min-width: 300px; margin: 0 auto @margen auto; }
 
+.center{ margin-left: auto !important; margin-right: auto !important; float: none !important; }
 .left{ float: left !important; }
 .right{ float: right !important; }
 
@@ -181,6 +182,8 @@ figure {margin: 0;}
 	img{ width: 100%; height: auto; margin: 0 0 @margen 0; }
 }
 
+
+//elementos
 p{ margin-bottom: 1em; }
 
 
@@ -252,7 +255,23 @@ input[type='submit']{ cursor: pointer; }
 
 @media only screen and (max-width : 480px) {
 
-	.fourth{ width: 50% !important; margin-bottom: @margen; }
+	.columna{
+
+		&.small-1{ width: 6.3%; }
+		&.small-2{ width: 14.6%; }
+		&.small-3{ width: 22.9%; }
+		&.small-4{ width: 31.2%; }
+		&.small-5{ width: 39.5%; }
+		&.small-6{ width: 47.8%; }
+		&.small-7{ width: 56.1%; }
+		&.small-8{ width: 64.4%; }
+		&.small-9{ width: 72.7%; }
+		&.small-10{ width: 81%; }
+		&.small-11{ width: 89.3%; }
+		&.small-12{ width: 97.6%; }
+	}
+
+	.c-6{ width: 50% !important; margin-bottom: @margen; }
 
 	form{
 		input[type='submit']{ width: 47.8%!important; }
