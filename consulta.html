@@ -32,7 +32,7 @@
 			<div class="main">
 				<div id="registros" class="width clearfix instrucciones">
 				</div><!-- registros -->
-	
+				<a href="DescargaCSV.php">Descarga archivo</a>
 			</div><!-- main -->
 
 		</div><!-- container -->
@@ -44,9 +44,10 @@
 	</body>
 
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="etimex.js"></script>
     <script type="text/javascript">
-		$(document).ready(function() {              
-			$.ajax({    //create an ajax request to load_page.php
+		$(document).ready(function(e) {
+            $.ajax({    //create an ajax request to load_page.php
 				type: "GET",
 				url: "MuestraRegistros.php",             
 				dataType: "html",   //expect html to be returned                
@@ -54,8 +55,10 @@
 				$("#registros").html(response); 
 				//alert(response);
 				}
-			});
-		});	
+			});	
+        });
+		
+		
 	</script>
 
 </html>
