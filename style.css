@@ -369,158 +369,164 @@ figure {
   margin: 0 auto 20px auto;
 }
 /* line 138, style.less */
+.center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+}
+/* line 139, style.less */
 .left {
   float: left !important;
 }
-/* line 139, style.less */
+/* line 140, style.less */
 .right {
   float: right !important;
 }
-/* line 141, style.less */
+/* line 142, style.less */
 .first {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 142, style.less */
+/* line 143, style.less */
 .last {
   margin-right: 0;
   padding-right: 0;
 }
-/* line 144, style.less */
+/* line 145, style.less */
 .columna {
   float: left;
   margin: 0 1%;
 }
-/* line 148, style.less */
+/* line 149, style.less */
 .columna.c-1 {
   width: 6.3%;
 }
-/* line 149, style.less */
+/* line 150, style.less */
 .columna.c-2 {
   width: 14.6%;
 }
-/* line 150, style.less */
+/* line 151, style.less */
 .columna.c-3 {
   width: 22.9%;
 }
-/* line 151, style.less */
+/* line 152, style.less */
 .columna.c-4 {
   width: 31.2%;
 }
-/* line 152, style.less */
+/* line 153, style.less */
 .columna.c-5 {
   width: 39.5%;
 }
-/* line 153, style.less */
+/* line 154, style.less */
 .columna.c-6 {
   width: 47.8%;
 }
-/* line 154, style.less */
+/* line 155, style.less */
 .columna.c-7 {
   width: 56.1%;
 }
-/* line 155, style.less */
+/* line 156, style.less */
 .columna.c-8 {
   width: 64.4%;
 }
-/* line 156, style.less */
+/* line 157, style.less */
 .columna.c-9 {
   width: 72.7%;
 }
-/* line 157, style.less */
+/* line 158, style.less */
 .columna.c-10 {
   width: 81%;
 }
-/* line 158, style.less */
+/* line 159, style.less */
 .columna.c-11 {
   width: 89.3%;
 }
-/* line 159, style.less */
+/* line 160, style.less */
 .columna.c-12 {
   width: 97.6%;
 }
-/* line 161, style.less */
+/* line 162, style.less */
 .columna.grid {
   background: #1aa2dc;
   color: #ffffff;
   padding: 20px;
   text-align: center;
 }
-/* line 163, style.less */
+/* line 164, style.less */
 .columna img {
   width: 100%;
   height: auto;
   margin: 0 0 20px 0;
 }
-/* line 167, style.less */
+/* line 168, style.less */
 .span {
   float: left;
 }
-/* line 168, style.less */
+/* line 169, style.less */
 .span.c-1 {
   width: 8.3%;
 }
-/* line 169, style.less */
+/* line 170, style.less */
 .span.c-2 {
   width: 16.6%;
 }
-/* line 170, style.less */
+/* line 171, style.less */
 .span.c-3 {
   width: 24.9%;
 }
-/* line 171, style.less */
+/* line 172, style.less */
 .span.c-4 {
   width: 33.2%;
 }
-/* line 172, style.less */
+/* line 173, style.less */
 .span.c-5 {
   width: 41.5%;
 }
-/* line 173, style.less */
+/* line 174, style.less */
 .span.c-6 {
   width: 49.8%;
 }
-/* line 174, style.less */
+/* line 175, style.less */
 .span.c-7 {
   width: 58.1%;
 }
-/* line 175, style.less */
+/* line 176, style.less */
 .span.c-8 {
   width: 66.4%;
 }
-/* line 176, style.less */
+/* line 177, style.less */
 .span.c-9 {
   width: 74.7%;
 }
-/* line 177, style.less */
+/* line 178, style.less */
 .span.c-10 {
   width: 83%;
 }
-/* line 178, style.less */
+/* line 179, style.less */
 .span.c-11 {
   width: 91.3%;
 }
-/* line 179, style.less */
+/* line 180, style.less */
 .span.c-12 {
   width: 99.6%;
 }
-/* line 181, style.less */
+/* line 182, style.less */
 .span img {
   width: 100%;
   height: auto;
   margin: 0 0 20px 0;
 }
-/* line 184, style.less */
+/* line 187, style.less */
 p {
   margin-bottom: 1em;
 }
 /*** GENERAL ***/
-/* line 189, style.less */
+/* line 192, style.less */
 body {
   background: #fff;
   font: 14px / 18px 'hp regular';
 }
-/* line 191, style.less */
+/* line 194, style.less */
 .boton {
   padding: 20px;
   background: #1aa2dc;
@@ -542,65 +548,65 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-/* line 193, style.less */
+/* line 196, style.less */
 .renglon {
   margin: 0 0 20px 0;
 }
-/* line 195, style.less */
+/* line 198, style.less */
 input {
   margin-bottom: 4px;
   border: none;
   border-bottom: 1px solid #1aa2dc;
   font: 16px / 16px 'hp regular';
 }
-/* line 196, style.less */
+/* line 199, style.less */
 input:focus {
   outline: none;
 }
-/* line 199, style.less */
+/* line 202, style.less */
 label {
   color: #58595b;
   font: 14px / 14px 'hp light';
 }
-/* line 201, style.less */
+/* line 204, style.less */
 hr {
   margin: 0;
   border: 0;
   height: 1px;
   background: #1aa2dc;
 }
-/* line 203, style.less */
+/* line 206, style.less */
 a {
   color: #1aa2dc;
   font: 12px / 12px 'hp light';
 }
 /*** HEADER ***/
-/* line 207, style.less */
+/* line 210, style.less */
 header {
   margin-bottom: 20px;
   padding-top: 40px;
   border-bottom: 1px solid #1aa2dc;
 }
-/* line 209, style.less */
+/* line 212, style.less */
 h1 {
   font: 26px / 32px 'hp bold';
 }
-/* line 211, style.less */
+/* line 214, style.less */
 h2 {
   font: 20px / 20px 'hp bold';
 }
-/* line 213, style.less */
+/* line 216, style.less */
 h3 {
   font: 15px / 15px 'hp bold';
   margin: 0 0 10px 0;
 }
-/* line 214, style.less */
+/* line 217, style.less */
 h4 {
   font: 15px / 15px 'hp light';
   margin: 0;
 }
 /*** FOOTER ***/
-/* line 218, style.less */
+/* line 221, style.less */
 input[type='submit'] {
   cursor: pointer;
   text-transform: uppercase;
@@ -611,45 +617,45 @@ input[type='submit'] {
   
 }
 @media only screen and (max-width: 768px) {
-  /* line 229, style.less */
+  /* line 232, style.less */
   .c-10.right {
     width: 97.6%;
   }
-  /* line 232, style.less */
+  /* line 235, style.less */
   .instrucciones h2 {
     width: 47.8% !important;
     float: none;
     margin: 0 auto 20px auto;
   }
-  /* line 233, style.less */
+  /* line 236, style.less */
   .instrucciones .subtitulo {
     margin: 0;
     text-align: center;
   }
-  /* line 238, style.less */
+  /* line 241, style.less */
   form .renglon > .c-2 {
     width: 47.8%;
     margin-bottom: 20px;
   }
-  /* line 239, style.less */
+  /* line 242, style.less */
   form .renglon > .c-2 > .c-10 {
     width: 81%;
   }
-  /* line 241, style.less */
+  /* line 244, style.less */
   form .renglon > .c-1 {
     width: 14.6%;
   }
-  /* line 242, style.less */
+  /* line 245, style.less */
   form .renglon > .c-5 {
     width: 31.2%;
   }
-  /* line 246, style.less */
+  /* line 249, style.less */
   form .acepto {
     width: 47.8%;
     margin: 0 auto 20px auto;
     text-align: center;
   }
-  /* line 248, style.less */
+  /* line 251, style.less */
   form input[type='submit'] {
     display: block;
     margin: auto;
@@ -657,12 +663,60 @@ input[type='submit'] {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 255, style.less */
-  .fourth {
+  /* line 260, style.less */
+  .columna.small-1 {
+    width: 6.3%;
+  }
+  /* line 261, style.less */
+  .columna.small-2 {
+    width: 14.6%;
+  }
+  /* line 262, style.less */
+  .columna.small-3 {
+    width: 22.9%;
+  }
+  /* line 263, style.less */
+  .columna.small-4 {
+    width: 31.2%;
+  }
+  /* line 264, style.less */
+  .columna.small-5 {
+    width: 39.5%;
+  }
+  /* line 265, style.less */
+  .columna.small-6 {
+    width: 47.8%;
+  }
+  /* line 266, style.less */
+  .columna.small-7 {
+    width: 56.1%;
+  }
+  /* line 267, style.less */
+  .columna.small-8 {
+    width: 64.4%;
+  }
+  /* line 268, style.less */
+  .columna.small-9 {
+    width: 72.7%;
+  }
+  /* line 269, style.less */
+  .columna.small-10 {
+    width: 81%;
+  }
+  /* line 270, style.less */
+  .columna.small-11 {
+    width: 89.3%;
+  }
+  /* line 271, style.less */
+  .columna.small-12 {
+    width: 97.6%;
+  }
+  /* line 274, style.less */
+  .c-6 {
     width: 50% !important;
     margin-bottom: 20px;
   }
-  /* line 258, style.less */
+  /* line 277, style.less */
   form input[type='submit'] {
     width: 47.8%!important;
   }
