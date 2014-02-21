@@ -4,23 +4,18 @@
 	if (mysqli_connect_errno()){
 	  echo "Error, no se pudo conectar la base de datos: " . mysqli_connect_error();
 	} 
-
-	$registros=mysqli_query($con, "SELECT F_Nombre, F_Apellidos, F_Correo, F_ FROM TB_Usuario");
+	$query="SELECT F_Nombre, F_ApePat, F_ApeMat, F_Empresa, F_Telefono, F_Celular, F_Correo FROM TB_Usuario U INNER JOIN TB_Laboral L ON U.F_IdUsuario = L.F_IdUsuario";
+	$registros=mysqli_query($con, $query );
 
 	echo "<table border='1' >
 	<tr>
 	<td align=center><b>Nombre</b></td>
-	<td align=center><b>Apellidos</b></td>
-	<td align=center><b>Correo</b></td></td>
-	<td align=center><b>Telefono</b></td>
-	<td align=center><b>Fecha de Nacimiento</b></td>
-	<td align=center><b>Calle</b></td></td>
-	<td align=center><b>Num. Ext.</b></td></td>
-	<td align=center><b>Num. Int</b></td></td>
-	<td align=center><b>Colonia</b></td></td>
-	<td align=center><b>Ciudad</b></td></td>
-	<td align=center><b>Estado</b></td></td>
-	<td align=center><b>C.P.</b></td></td>";
+	<td align=center><b>Apellido Paterno</b></td>
+	<td align=center><b>Apellido Materno</b></td>
+	<td align=center><b>Empresa</b></td>
+	<td align=center><b>Tel.</b></td>
+	<td align=center><b>Cel.</b></td>
+	<td align=center><b>Correo</b></td></td>";
 
 	while($data = mysqli_fetch_array($registros))
 	{   
@@ -31,13 +26,7 @@
 		echo "<td align=center>$data[3]</td>";
 		echo "<td align=center>$data[4]</td>";
 		echo "<td align=center>$data[5]</td>";
-		echo "<td align=center>$data[7]</td>";
-		echo "<td align=center>$data[8]</td>";
-		echo "<td align=center>$data[9]</td>";
-		echo "<td align=center>$data[10]</td>";
-		echo "<td align=center>$data[11]</td>";
-		echo "<td align=center>$data[12]</td>";
-		echo "<td align=center>$data[13]</td>";
+		echo "<td align=center>$data[6]</td>";
 		echo "</tr>";
 	}
 	echo "</table>";
