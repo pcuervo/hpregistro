@@ -5,7 +5,8 @@
 	
 	// Usuario
 	$nombre = $_POST['nombre'];
-	$apellido = $_POST['apellido'];
+	$apeP = $_POST['apellido-paterno'];
+	$apeM = $_POST['apellido-materno'];
 	$correo = $_POST['correo'];
 	$password = $_POST['password'];
 	$fecNac = $_POST['anio']. "-" . $_POST['mes'] . "-" .$_POST['dia']; 
@@ -13,9 +14,10 @@
 	$cel = $_POST['celular'];
 	// Dirección
 	$calle = $_POST['calle'];
-	$num_ext = $_POST['numero-ext'];
-	$num_int = $_POST['numero-int'];
+	$num_ext = $_POST['numero-exterior'];
+	$num_int = $_POST['numero-interior'];
 	$colonia = $_POST['colonia'];
+	$delMun = $_POST['del-mun'];
 	$ciudad = $_POST['ciudad'];
 	$estado = $_POST['estado'];
 	$cp = $_POST['cp'];
@@ -29,13 +31,13 @@
 	$masInfo = $_POST['mas-info'];
 	
 	
-	$sqlUsuario = "INSERT INTO TB_Usuario(F_Nombre, F_Apellidos, F_Correo, F_Telefono, F_FecNac) VALUES ('".$nombre."', '".$apellido."', '".$correo."', '".$tel."', '".$fecNac."')";
+	$sqlUsuario = "INSERT INTO TB_Usuario(F_Nombre, F_ApePat, F_ApeMat, F_Correo, F_Telefono, F_Celular, F_FecNac) VALUES ('".$nombre."', '".$apeP."', '".$apeM."', '".$correo."', '".$tel."', '".$cel."', '".$fecNac."')";
 	echo $sqlUsuario;
 	echo "<br />";	
 	if (!mysqli_query($con,$sqlUsuario)){
 		die('Error: ' . mysqli_error($con));
 	} 
-	$sqlDireccion = "INSERT INTO TB_Direccion(F_Calle, F_NumExt, F_NumInt, F_Colonia, F_Ciudad, F_Estado, F_CP) VALUES ('".$calle."', '".$num_ext."', '".$num_int."', '".$colonia."', '".$ciudad."', '".$estado."', '".$cp."')";
+	$sqlDireccion = "INSERT INTO TB_Direccion(F_Calle, F_NumExt, F_NumInt, F_Colonia, F_Ciudad, F_MunDel, F_Estado, F_CP) VALUES ('".$calle."', '".$num_ext."', '".$num_int."', '".$colonia."', '".$ciudad."', '".$delMun."', '".$estado."', '".$cp."')";
 	echo $sqlDireccion;
 	echo "<br />";	
 	if (!mysqli_query($con,$sqlDireccion)){
