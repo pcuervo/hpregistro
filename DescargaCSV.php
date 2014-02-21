@@ -7,19 +7,39 @@
 	mysql_set_charset('utf8',$conn); 
 
 	$archivo = 'registrados_etimex.csv';
+	header("Content-Type: text/csv;charset=UTF-8" );
 	 
 	$handle = fopen($archivo, 'w');
-	$encabezado = array('Nombre', 'Apellidos', 'Email');
+	$encabezado = array('Nombre', 'Apellido paterno', 'Apellido materno', 'Correo e.', 'Teléfono', 'Celular', 'Fecha de nacimiento', 'Calle', 'Num. Ext.', 'Num. Int.', 'Colonia', 'Ciudad', 'Delegación/Municipio', 'Estado', 'C.P.', 'Empresa', 'Giro', 'Cargo', '¿Cómo te enteraste?', 'Área interés'  );
 	fputcsv($handle, $encabezado, ',', '"');
 	 
-	$sql = mysqli_query($con, 'SELECT * FROM TB_Usuario');
+	$sql = mysqli_query($con, 'SELECT * FROM TB_Usuario U INNER JOIN TB_Direccion D ON D.F_IdUsuario = U.F_IdUsuario INNER JOIN TB_Laboral L ON L.F_IdUsuario = U.F_IdUsuario INNER JOIN TB_Registro R ON R.F_IdUsuario = U.F_IdUsuario');
 	 
 	while($results = mysqli_fetch_array($sql)) {
+
 		$row = array(			
-			$results[1],
-			$results[2],
-			$results[3] 
+			utf8_decode($results[1]),
+			utf8_decode($results[2]),
+			utf8_decode($results[3]),
+			utf8_decode($results[4]),
+			utf8_decode($results[5]),
+			utf8_decode($results[6]),
+			utf8_decode($results[7]),
+			utf8_decode($results[9]),
+			utf8_decode($results[10]),
+			utf8_decode($results[11]),
+			utf8_decode($results[12]),
+			utf8_decode($results[13]),
+			utf8_decode($results[14]),
+			utf8_decode($results[15]),
+			utf8_decode($results[16]),
+			utf8_decode($results[18]),
+			utf8_decode($results[19]),
+			utf8_decode($results[20]),
+			utf8_decode($results[22]),
+			utf8_decode($results[23])
 		);
+		
 		fputcsv($handle, $row, ',', '"');
 	}
 	 

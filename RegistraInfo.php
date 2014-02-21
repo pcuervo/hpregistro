@@ -31,22 +31,15 @@
 	$area = $_POST['area'];
 	$masInfo = $_POST['mas-info'];
 	
-	
 	$sqlUsuario = "INSERT INTO TB_Usuario(F_Nombre, F_ApePat, F_ApeMat, F_Correo, F_Telefono, F_Celular, F_FecNac) VALUES ('".$nombre."', '".$apeP."', '".$apeM."', '".$correo."', '".$tel."', '".$cel."', '".$fecNac."')";
-	echo $sqlUsuario;
-	echo "<br />";	
 	if (!mysqli_query($con,$sqlUsuario)){
 		die('Error: ' . mysqli_error($con));
 	} 
 	$sqlDireccion = "INSERT INTO TB_Direccion(F_Calle, F_NumExt, F_NumInt, F_Colonia, F_Ciudad, F_MunDel, F_Estado, F_CP) VALUES ('".$calle."', '".$num_ext."', '".$num_int."', '".$colonia."', '".$ciudad."', '".$delMun."', '".$estado."', '".$cp."')";
-	echo $sqlDireccion;
-	echo "<br />";	
 	if (!mysqli_query($con,$sqlDireccion)){
 		die('Error: ' . mysqli_error($con));
 	}
 	$sqlLaboral = "INSERT INTO TB_Laboral(F_Empresa, F_Giro, F_Cargo) VALUES ('".$empresa."', '".$giro."', '".$cargo."')";
-	echo $sqlLaboral;
-	echo "<br />";	
 	if (!mysqli_query($con,$sqlLaboral)){
 		die('Error: ' . mysqli_error($con));
 	}
@@ -54,8 +47,39 @@
 	if($enteraste == 'otro') $enteraste = $_POST['otro'];	
 	if($masInfo != '1') $masInfo = 0;
 	$sqlRegistro = "INSERT INTO TB_Registro(F_Medio, F_AreaInteres, F_MasInfo) VALUES ('".$enteraste."', '".$area."', '".$masInfo."')";
-	echo $sqlRegistro;
-	echo "<br />";	
 	if (!mysqli_query($con,$sqlRegistro)){
 		die('Error: ' . mysqli_error($con));
 	}
+	
+	// destinatario
+	$para  = $correo;
+	// subject
+	$titulo = 'Gracias '.$nombre.' por registrarte al evento Etimex';
+
+// message
+	$mensaje = '
+	<html>
+	<head>
+	  	<title>Etimex</title>
+	</head>
+	<body>
+		  <p>Hola '.$nombre.',</p>
+		  <p>Se han registrados correctamente tus datos para asistir al evento Brand Label Etimex el día 18 de marzo en el recinto Cintermex de la ciudad de Monterrey.<p>
+		  <p>Por favor presenta este correo como confirmación de asistencia el día del evento.</p>
+		  <p>¡Te esperamos!</p>
+		  <p>Atentamente,</p>
+		  <p>El equipo de Etimex y HP Indigo</p>
+	</body>
+	</html>';
+
+	// Para enviar un correo HTML mail, la cabecera Content-type debe fijarse
+	$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+	$cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+	$cabeceras .= 'From: Evento Etimex <info@etimex.com>' . "\r\n";
+	
+	// Mail it
+	mail($para, $titulo, $mensaje, $cabeceras);
+	
+	header( 'Location: index.php?registro=1' ) ;
+	
+?>
