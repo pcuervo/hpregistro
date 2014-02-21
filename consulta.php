@@ -1,3 +1,9 @@
+<?php 
+    	$id = $_GET['logged'];
+		if(empty($id)) 
+			header('Location: login.html ');
+		else {
+    ?>
 <!doctype html>
 	<head>
 		<meta charset="utf-8">
@@ -10,7 +16,7 @@
 		<meta http-equiv="cleartype" content="on">
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
-
+	
 	<body>
 		<!--[if lt IE 9]>
 			<p class="chromeframe">Estás usando una versión <strong>vieja</strong> de tu explorador. Por favor <a href="http://browsehappy.com/" target="_blank"> actualiza tu explorador</a> para tener una experiencia completa.</p>
@@ -62,9 +68,7 @@
 				}
 			});
         });
-
-
 	</script>
-
 </html>
+<?php } ?>
 
