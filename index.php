@@ -237,10 +237,10 @@
     <script>
 		$.validate();
 	</script>
-    <?php 
+    <?php
     	$msg = $_GET['registro'];
 		if($msg != '')
-			echo '<script>alert("¡Tus datos han sido registrados correctamente! Te llegará un correo a la dirección registrada.");</script>';	
+			echo '<script>alert("¡Tus datos han sido registrados correctamente! Te llegará un correo a la dirección registrada.");</script>';
     ?>
 </html>
 
