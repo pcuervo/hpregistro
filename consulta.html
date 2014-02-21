@@ -22,17 +22,24 @@
 				<div class="width clearfix">
 
 					<h1 class="columna c-10" >Registro Brand Label Etimex</h1>
-					<img class="span c-2" src="images/etimex-logo.jpg" alt="">
-
+					<img class="span c-2 right" src="images/etimex-logo.jpg" alt="">
 
 				</div><!-- width clearfix -->
 
 			</header>
 
 			<div class="main">
-				<div id="registros" class="width clearfix instrucciones">
+				<div id="registros" class="width clearfix">
 				</div><!-- registros -->
-				<a href="DescargaCSV.php">Descarga archivo</a>
+
+				<div class="width clearfix">
+
+					<div class="columna c-3">
+						<a href="DescargaCSV.php">Descarga archivo</a>
+					</div><!-- span -->
+
+				</div><!-- width -->
+
 			</div><!-- main -->
 
 		</div><!-- container -->
@@ -49,16 +56,16 @@
 		$(document).ready(function(e) {
             $.ajax({    //create an ajax request to load_page.php
 				type: "GET",
-				url: "MuestraRegistros.php",             
-				dataType: "html",   //expect html to be returned                
-				success: function(response){                    
-				$("#registros").html(response); 
+				url: "MuestraRegistros.php",
+				dataType: "html",   //expect html to be returned
+				success: function(response){
+				$("#registros").html(response);
 				//alert(response);
 				}
-			});	
+			});
         });
-		
-		
+
+
 	</script>
 
 </html>
