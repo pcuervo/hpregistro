@@ -1,6 +1,7 @@
 <?php
 	// Conectar base de datos
 	include("ConectaBD.php");
+	mysql_set_charset('utf8',$conn); 
 	ini_set('display_errors', 'On');
 	
 	// Usuario

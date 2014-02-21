@@ -4,12 +4,12 @@
 	if (mysqli_connect_errno()){
 	  echo "Error, no se pudo conectar la base de datos: " . mysqli_connect_error();
 	} 
-
+	mysql_set_charset('utf8',$conn); 
 
 	$archivo = 'registrados_etimex.csv';
-	$encabezado = array('Nombre', 'Apellidos', 'Email');
 	 
 	$handle = fopen($archivo, 'w');
+	$encabezado = array('Nombre', 'Apellidos', 'Email');
 	fputcsv($handle, $encabezado, ',', '"');
 	 
 	$sql = mysqli_query($con, 'SELECT * FROM TB_Usuario');
