@@ -10,12 +10,13 @@
 	$password = $_POST['password'];
 	$fecNac = $_POST['anio']. "-" . $_POST['mes'] . "-" .$_POST['dia']; 
 	$tel = $_POST['telefono'];
+	$cel = $_POST['celular'];
 	// Dirección
 	$calle = $_POST['calle'];
-	$num_ext = "0";
-	$num_int = "0";
+	$num_ext = $_POST['numero-ext'];
+	$num_int = $_POST['numero-int'];
 	$colonia = $_POST['colonia'];
-	$ciudad = "cuerna";
+	$ciudad = $_POST['ciudad'];
 	$estado = $_POST['estado'];
 	$cp = $_POST['cp'];
 	// Laboral

@@ -5,11 +5,10 @@
 	  echo "Error, no se pudo conectar la base de datos: " . mysqli_connect_error();
 	} 
 
-	$registros=mysqli_query($con, "SELECT * FROM TB_Usuario U INNER JOIN TB_Direccion D ON U.F_IdUsuario = D.F_IdUsuario");
+	$registros=mysqli_query($con, "SELECT F_Nombre, F_Apellidos, F_Correo, F_ FROM TB_Usuario");
 
 	echo "<table border='1' >
 	<tr>
-	<td align=center> <b>Clave Usuario</b></td>
 	<td align=center><b>Nombre</b></td>
 	<td align=center><b>Apellidos</b></td>
 	<td align=center><b>Correo</b></td></td>
