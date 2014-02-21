@@ -64,7 +64,7 @@
 	</head>
 	<body>
 		  <p>Hola '.$nombre.',</p>
-		  <p>Se han registrados correctamente tus datos para asistir al evento Brand Label Etimex el día 18 de marzo en el recinto Cintermex de la ciudad de Monterrey.<p>
+		  <p>Se han registrado correctamente tus datos para asistir al evento Brand Label Etimex el día 18 de marzo en el recinto Cintermex de la ciudad de Monterrey.<p>
 		  <p>Por favor presenta este correo como confirmación de asistencia el día del evento.</p>
 		  <p>¡Te esperamos!</p>
 		  <p>Atentamente,</p>
