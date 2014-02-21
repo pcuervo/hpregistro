@@ -548,6 +548,7 @@ body {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  font: 16px / 16px 'hp regular';
 }
 /* line 196, style.less */
 .renglon {
