@@ -33,20 +33,20 @@
 
 				<div class="width clearfix instrucciones">
 
-					<div class="subtitulo columna c-8">
+					<div class="subtitulo columna c-7 small-12">
 						<h3>Por favor registra tus datos</h3>
 						<h4>Bienvenido a una experiencia de primera clase</h4>
 					</div>
 
 					<div class="columna c-3 small-12">
-						<a href="pdf/Agenda_Brand_Label_Etimex.pdf" target="_blank" class="boton columna c-12">Descargar agenda</a>
+						<a href="pdf/Agenda_Brand_Label_Etimex.pdf" class="boton columna c-12">Descargar agenda</a>
 					</div>
 
 				</div><!-- width clearfix -->
 
 				<div class="width clearfix">
 
-					<form action="RegistraInfo.php" class="columna c-10" accept-charset="utf-8" method="post">
+					<form action="RegistraInfo.php" class="columna c-10 small-12" accept-charset="utf-8" method="post">
 
 						<div class="renglon clearfix">
 
@@ -59,7 +59,7 @@
 								<label class="span c-12" for="apellido-paterno">Apellido paterno</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-12" name="apellido-materno"type="text">
+								<input class="span c-12" name="apellido-materno"type="text" data-validation="required">
 								<label class="span c-12" for="apellido-materno">Apellido materno</label>
 							</div><!-- span c-3 -->
 
@@ -72,7 +72,7 @@
 								<label class="span c-12" for="correo">Correo electrónico</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-12 tel" name="telefono" type="tel" data-validation="number">
+								<input class="span c-12" name="telefono" type="tel" data-validation="number">
 								<label class="span c-12" for="telefono">Teléfono</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
@@ -80,9 +80,9 @@
 								<label class="span c-12" for="celular">Celular</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-4" name="dia"type="text" value="dd" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" >
-								<input class="span c-4" name="mes"type="text" value="mm" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" >
-								<input class="span c-4" name="anio"type="text" value="aaaa" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" >
+								<input class="span c-4" name="dia"type="text" value="dd" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" data-validation="number">
+								<input class="span c-4" name="mes"type="text" value="mm" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" data-validation="number" >
+								<input class="span c-4" name="anio"type="text" value="aaaa" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" data-validation="number">
 								<label class="span c-12" for="nacimiento">Fecha de nacimiento</label>
 							</div><!-- span c-3 -->
 
@@ -129,8 +129,8 @@
 						<div class="renglon clearfix">
 
 							<div class="span c-3">
-								<input class="span c-12" name="del-mun"type="text" data-validation="required">
-								<label class="span c-12" for="del-mun">Delegación / Municipio</label>
+								<input class="span c-12" name="estado"type="text" data-validation="required">
+								<label class="span c-12" for="estado">Delegación / Municipio</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
 								<input class="span c-12" name="ciudad"type="text" data-validation="required">
@@ -188,7 +188,7 @@
 						<div class="renglon clearfix">
 
 							<div class="span c-12">
-								<input class="span c-12" name="area"type="text" data-validation="required">
+								<input class="span c-12" name="area"type="text">
 								<label class="span c-12" for="area">Área de interés</label>
 							</div><!-- span c-12 -->
 
@@ -196,26 +196,28 @@
 
 						<div class="renglon clearfix acepto">
 
-							<div class="columna c-4">
+							<div class="columna c-4 medium-6">
 								<input type="checkbox" name="mas-info" value="1" checked> Deseo recibir más información<br />
-								<a target="_blank" href="pdf/Aviso_de_Privacidad_Etimex.pdf">Consulte la política de privacidad</a>
+								<a href="pdf/Aviso_de_Privacidad_Etimex.pdf">Consulte la política de privacidad</a>
 							</div>
 
-							<div class="columna c-3 right">
+							<div class="columna c-3 medium-6 right">
 								<input class="boton columna c-12" type="submit" value="enviar">
 							</div>
 
 
 						</div><!-- renglon -->
 
+
+
 					</form>
 
-					<div class="span c-1 right">
+					<div class="span c-1 small-12 right">
 
-						<img src="images/hp-logo.png" alt="">
-						<img src="images/avery-logo.jpg" alt="">
-						<img src="images/mintel-logo.jpg" alt="">
-						<img src="images/wallace-church.jpg" alt="">
+						<img class="columna small-3" src="images/hp-logo.png" alt="">
+						<img class="columna small-3" src="images/avery-logo.jpg" alt="">
+						<img class="columna small-3" src="images/mintel-logo.jpg" alt="">
+						<img class="columna small-3" src="images/wallace-church.jpg" alt="">
 
 					</div><!-- columna c-2 -->
 
@@ -237,7 +239,7 @@
     <script>
 		$.validate();
 	</script>
-    <?php
+   <?php
     	$msg = $_GET['registro'];
 		if($msg != '')
 			echo '<script>alert("¡Tus datos han sido registrados correctamente! Te llegará un correo a la dirección registrada.");</script>';
