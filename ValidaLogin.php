@@ -12,9 +12,9 @@
 	if($rUsuario = mysqli_fetch_array($qUsuario)) {
 		session_start();
 		$_SESSION['usuario'] = $usuario;
-		header('Location: consulta.html?'.SID) ;	
+		header('Location: consulta.php?id='. session_id()) ;	
 	} else {
-		header('Location: login.html?logged=false');
+		header('Location: login.html');
 		
 	}
 

@@ -72,11 +72,11 @@
 								<label class="span c-12" for="correo">Correo electrónico</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-12" name="telefono" type="tel" data-validation="number">
+								<input class="span c-12" name="telefono" type="tel" data-validation="required">
 								<label class="span c-12" for="telefono">Teléfono</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-12" name="celular" type="tel" data-validation="number">
+								<input class="span c-12" name="celular" type="tel" data-validation="required">
 								<label class="span c-12" for="celular">Celular</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
@@ -239,10 +239,10 @@
     <script>
 		$.validate();
 	</script>
-   <?php
+   <?php 
     	$msg = $_GET['registro'];
 		if($msg != '')
-			echo '<script>alert("¡Tus datos han sido registrados correctamente! Te llegará un correo a la dirección registrada.");</script>';
+			echo '<script>alert("¡Tus datos han sido registrados correctamente! Te llegará un correo a la dirección registrada.");</script>';	
     ?>
 </html>
 
