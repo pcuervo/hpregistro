@@ -162,7 +162,6 @@ figure {margin: 0;}
 	&.grid{ background: @highlight; color: @claro; padding: @margen; text-align: center; }
 
 	img{ width: 100%; height: auto; margin: 0 0 @margen 0; }
-
 }
 
 .span{ float: left;
@@ -182,9 +181,20 @@ figure {margin: 0;}
 	img{ width: 100%; height: auto; margin: 0 0 @margen 0; }
 }
 
+.table{
+	.renglon{ margin: 0;
+		div{ padding: 4px; border: 1px solid @highlight; overflow: hidden; }
+		.text-center{ background: @highlight; color: @claro; .hp( 16px, 16px, 'hp bold' ); }
+		&:first-child > div{ background: @highlight; }
+	}
+}
+
 
 //elementos
 p{ margin-bottom: 1em; }
+
+//caracteristicas
+.text-center{ text-align: center; }
 
 
 /*** GENERAL ***/
@@ -248,6 +258,14 @@ input[type='submit']{ cursor: pointer; text-transform: uppercase; .hp( 20px, 20p
 
 	.c-10.right{ width: 97.6%; }
 
+	.table{
+		.renglon{
+			div{ border: 1px solid @highlight; .hp( 12px, 12px, 'hp light' );
+				&.text-center{ background: @highlight; color: @claro; .hp( 14px, 14px, 'hp regular' ); }
+			}
+		}
+	}
+
 	.instrucciones{
 		h2{ width: 47.8% !important; float: none; margin: 0 auto @margen auto; }
 		.subtitulo{ margin: 0; text-align: center; }
@@ -271,7 +289,6 @@ input[type='submit']{ cursor: pointer; text-transform: uppercase; .hp( 20px, 20p
 }
 
 @media only screen and (max-width : 480px) {
-
 
 	//Framework
 	.columna{
@@ -305,6 +322,15 @@ input[type='submit']{ cursor: pointer; text-transform: uppercase; .hp( 20px, 20p
 		&.small-11{ width: 91.3%; }
 		&.small-12{ width: 99.6%; }
 
+	}
+
+	.table{
+		.renglon{
+			div{ padding: 4px; border: 1px solid @highlight; overflow: hidden;
+				&.text-center{ background: @highlight; color: @claro; .hp( 16px, 16px, 'hp bold' ); }
+				&:nth-child(n+4){ display: none; }
+			}
+		}
 	}
 
 
