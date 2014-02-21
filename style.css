@@ -533,7 +533,7 @@ figure {
   font: 16px / 16px 'hp bold';
 }
 /* line 188, style.less */
-.table .renglon:first-child > div {
+.table .renglon:first-child {
   background: #1aa2dc;
 }
 /* line 194, style.less */
