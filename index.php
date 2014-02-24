@@ -166,8 +166,8 @@
 								<label class="columna c-10" for="">Espectacular, anuncio o periódico</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="columna c-2" type="radio" name="enteraste" value="recinto">
-								<label class="columna c-10" for="">Recinto</label>
+								<input class="columna c-2" type="radio" name="enteraste" value="correo electrónico">
+								<label class="columna c-10" for="">Correo electrónico</label>
 							</div><!-- span c-3 -->
 							<div class="columna c-1">
 								<input class="columna c-4" type="radio" name="enteraste" value="otro">

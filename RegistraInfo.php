@@ -51,10 +51,17 @@
 		die('Error: ' . mysqli_error($con));
 	}
 	
+	// Regresa el ID del usuario
+	$query="SELECT F_IdUsuario FROM TB_Usuario ORDER BY F_IdUsuario DESC LIMIT 1";
+	$rUsuario=mysqli_query($con, $query );
+	
+	if($data = mysqli_fetch_array($rUsuario)) {
+		$idUsuario = $data[0];
+	}
 	// destinatario
 	$para  = $correo;
 	// subject
-	$titulo = 'Gracias '.$nombre.' por registrarte al evento Etimex';
+	$titulo = '#'.$idUsuario.' Gracias '.$nombre.' por registrarte al evento Etimex';
 
 // message
 	$mensaje = '
@@ -63,12 +70,14 @@
 	  	<title>Etimex</title>
 	</head>
 	<body>
+		  <p>Folio: '.$idUsuario.'</p>
 		  <p>Hola '.$nombre.',</p>
-		  <p>Se han registrado correctamente tus datos para asistir al evento Brand Label Etimex el día 18 de marzo en el recinto Cintermex de la ciudad de Monterrey.<p>
+		  <p>Se han registrado correctamente tus datos para asistir al evento Brand Label Etimex el día 18 de marzo a las 8:30am en Cintermex de la ciudad de Monterrey.<p>
 		  <p>Por favor presenta este correo como confirmación de asistencia el día del evento.</p>
 		  <p>¡Te esperamos!</p>
 		  <p>Atentamente,</p>
 		  <p>El equipo de Etimex y HP Indigo</p>
+		  <img src="http://brandlabeletimex.com/images/etimex-logo.jpg" />
 	</body>
 	</html>';
 
