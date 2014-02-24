@@ -70,14 +70,13 @@
 	  	<title>Etimex</title>
 	</head>
 	<body>
-		  <p>Folio: '.$idUsuario.'</p>
+		  <p>Número de registro: '.$idUsuario.'</p>
 		  <p>Hola '.$nombre.',</p>
 		  <p>Se han registrado correctamente tus datos para asistir al evento Brand Label Etimex el día 18 de marzo a las 8:30am en Cintermex de la ciudad de Monterrey.<p>
 		  <p>Por favor presenta este correo como confirmación de asistencia el día del evento.</p>
 		  <p>¡Te esperamos!</p>
 		  <p>Atentamente,</p>
 		  <p>El equipo de Etimex y HP Indigo</p>
-		  <img src="http://brandlabeletimex.com/images/etimex-logo.jpg" />
 	</body>
 	</html>';
 
@@ -85,6 +84,8 @@
 	$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 	$cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	$cabeceras .= 'From: Evento Etimex <info@etimex.com>' . "\r\n";
+	$cabeceras .= "Reply-To: guillermo@litobel.com\r\n";
+
 	
 	// Mail it
 	mail($para, $titulo, $mensaje, $cabeceras);

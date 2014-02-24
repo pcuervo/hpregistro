@@ -34,8 +34,8 @@
 				<div class="width clearfix instrucciones">
 
 					<div class="subtitulo columna c-7 small-12">
-						<h3>Por favor registra tus datos</h3>
-						<h4>Bienvenido a una experiencia de primera clase</h4>
+						<h3>Bienvenido a una experiencia de primera clase</h3>
+						<h4>Por favor registra tus datos</h4>
 					</div>
 
 					<div class="columna c-3 small-12">
