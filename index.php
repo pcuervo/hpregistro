@@ -39,7 +39,7 @@
 					</div>
 
 					<div class="columna c-3 small-12">
-						<a href="pdf/Agenda_Brand_Label_Etimex.pdf" class="boton columna c-12">Descargar agenda</a>
+						<a href="pdf/Agenda_Brand_Label_Etimex.pdf" class="boton columna c-12" target="_blank">Descargar agenda</a>
 					</div>
 
 				</div><!-- width clearfix -->
@@ -210,7 +210,7 @@
 
 							<div class="columna c-4 medium-6">
 								<input type="checkbox" name="mas-info" value="1" checked> Deseo recibir más información<br />
-								<a href="pdf/Aviso_de_Privacidad_Etimex.pdf">Consulte la política de privacidad</a>
+								<a href="pdf/Aviso_de_Privacidad_Etimex.pdf" target="_blank">Consulte la política de privacidad</a>
 							</div>
 
 							<div class="columna c-3 medium-6 right">
