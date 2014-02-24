@@ -188,8 +188,20 @@
 						<div class="renglon clearfix">
 
 							<div class="span c-12">
-								<input class="span c-12" name="area"type="text">
-								<label class="span c-12" for="area">Área de interés</label>
+                            	<label class="span c-12" for="area">Área de interés</label>
+                                <select class="span c-4" name="area">
+                                	<option value="Deseo reducir mis inventarios">Deseo reducir mis inventarios</option>
+                                    <option value="Etiqueta auto-adherible">Etiqueta auto-adherible</option>
+                                    <option value="Etiqueta durable o de uso rudo">Etiqueta durable o de uso rudo</option>
+                                    <option value="Etiqueta película termo-encogible">Etiqueta película termo-encogible</option>
+                                    <option value="Etiqueta película envolvente BOPP">Etiqueta película envolvente BOPP</option>
+                                    <option value="Etiqueta FDA (Food and Drug Administration)">Etiqueta FDA (Food and Drug Administration)</option>
+                                    <option value="Etiquetas anti – falsificación">Etiquetas anti – falsificación</option>
+                                    <option value="Impresión de alto volumen">Impresión de alto volumen</option>
+                                    <option value="Impresión de mediano y bajo volumen">Impresión de mediano y bajo volumen</option>
+                                    <option value="Impresión en alta definición">Impresión en alta definición</option>
+                                </select>
+								
 							</div><!-- span c-12 -->
 
 						</div><!-- renglon -->
