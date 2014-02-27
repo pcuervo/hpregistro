@@ -8,15 +8,15 @@
 
 	$archivo = 'registrados_etimex.csv';
 	header("Content-Type: text/csv;charset=UTF-8" );
-	 
+	
 	$handle = fopen($archivo, 'w');
-	$encabezado = array('Nombre', 'Apellido paterno', 'Apellido materno', 'Correo e.', 'Teléfono', 'Celular', 'Fecha de nacimiento', 'Calle', 'Num. Ext.', 'Num. Int.', 'Colonia', 'Ciudad', 'Delegación/Municipio', 'Estado', 'C.P.', 'Empresa', 'Giro', 'Cargo', '¿Cómo te enteraste?', 'Área interés'  );
+	$encabezado = array('Nombre', 'Apellido paterno', 'Apellido materno', 'Correo e.', utf8_decode('Teléfono'), 'Celular', 'Fecha de nacimiento', 'Calle', 'Num. Ext.', 'Num. Int.', 'Colonia', 'Ciudad', utf8_decode('Delegación/Municipio'), 'Estado', 'C.P.', 'Empresa', 'Giro', 'Cargo', utf8_decode('¿Cómo te enteraste?'), utf8_decode('Área interés'), utf8_decode("recibir información"));
 	fputcsv($handle, $encabezado, ',', '"');
 	 
 	$sql = mysqli_query($con, 'SELECT * FROM TB_Usuario U INNER JOIN TB_Direccion D ON D.F_IdUsuario = U.F_IdUsuario INNER JOIN TB_Laboral L ON L.F_IdUsuario = U.F_IdUsuario INNER JOIN TB_Registro R ON R.F_IdUsuario = U.F_IdUsuario');
 	 
 	while($results = mysqli_fetch_array($sql)) {
-
+		$results[24] == '1' ? $masInfo = 'si' : $masInfo = 'no';
 		$row = array(			
 			utf8_decode($results[1]),
 			utf8_decode($results[2]),
@@ -37,7 +37,8 @@
 			utf8_decode($results[19]),
 			utf8_decode($results[20]),
 			utf8_decode($results[22]),
-			utf8_decode($results[23])
+			utf8_decode($results[23]), 
+			$masInfo
 		);
 		
 		fputcsv($handle, $row, ',', '"');
