@@ -71,7 +71,7 @@
 	  	<title>Etimex</title>
 	</head>
 	<body>
-		  <p>Número de registro: '.$idUsuario.'</p>
+		  <p>Número de registro: '.$folio.'</p>
 		  <p>Hola '.$nombre.',</p>
 		  <p>Se han registrado correctamente tus datos para asistir al evento Brand Label Etimex el Martes 18 de Marzo a las 8:30am en Cintermex en Monterrey.<p>
 		  <p>Por favor presenta este correo como confirmación de asistencia el día del evento.</p>
