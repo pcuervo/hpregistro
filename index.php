@@ -59,7 +59,7 @@
 								<label class="span c-12" for="apellido-paterno">Apellido paterno</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-12" name="apellido-materno"type="text" data-validation="required">
+								<input class="span c-12" name="apellido-materno"type="text">
 								<label class="span c-12" for="apellido-materno">Apellido materno</label>
 							</div><!-- span c-3 -->
 
@@ -76,7 +76,7 @@
 								<label class="span c-12" for="telefono">Teléfono</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-12" name="celular" type="tel" data-validation="required">
+								<input class="span c-12" name="celular" type="tel">
 								<label class="span c-12" for="celular">Celular</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
@@ -188,9 +188,12 @@
 						<div class="renglon clearfix">
 
 							<div class="span c-12">
-                            	<label class="span c-12" for="area">Área de interés</label>
+                            	<div class="span c-12">
+                                    <h3>Área de interés</h3>
+                                </div><!-- span c-12 -->
                                 <select class="span c-4" name="area">
-                                	<option value="Deseo reducir mis inventarios">Deseo reducir mis inventarios</option>
+                                	<option value="elige un área de interés" selected>Elige una</option>
+                                    <option value="Deseo reducir mis inventarios">Deseo reducir mis inventarios</option>
                                     <option value="Etiqueta auto-adherible">Etiqueta auto-adherible</option>
                                     <option value="Etiqueta durable o de uso rudo">Etiqueta durable o de uso rudo</option>
                                     <option value="Etiqueta película termo-encogible">Etiqueta película termo-encogible</option>
@@ -200,6 +203,7 @@
                                     <option value="Impresión de alto volumen">Impresión de alto volumen</option>
                                     <option value="Impresión de mediano y bajo volumen">Impresión de mediano y bajo volumen</option>
                                     <option value="Impresión en alta definición">Impresión en alta definición</option>
+                                    <option value="Otra">Otra</option>
                                 </select>
 								
 							</div><!-- span c-12 -->

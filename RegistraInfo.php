@@ -61,7 +61,8 @@
 	// destinatario
 	$para  = $correo;
 	// subject
-	$titulo = '#'.$idUsuario.' Gracias '.$nombre.' por registrarte al evento Etimex';
+	$folio = intval($idUsuario) + 50;
+	$titulo = '#'.$folio.' Gracias '.$nombre.' por registrarte en el BrandLabel Etimex';
 
 // message
 	$mensaje = '
@@ -72,8 +73,9 @@
 	<body>
 		  <p>Número de registro: '.$idUsuario.'</p>
 		  <p>Hola '.$nombre.',</p>
-		  <p>Se han registrado correctamente tus datos para asistir al evento Brand Label Etimex el día 18 de marzo a las 8:30am en Cintermex de la ciudad de Monterrey.<p>
+		  <p>Se han registrado correctamente tus datos para asistir al evento Brand Label Etimex el Martes 18 de Marzo a las 8:30am en Cintermex en Monterrey.<p>
 		  <p>Por favor presenta este correo como confirmación de asistencia el día del evento.</p>
+		  <p>Cualquier duda, favor de comunicarse al (81) 8479 0800.</p>
 		  <p>¡Te esperamos!</p>
 		  <p>Atentamente,</p>
 		  <p>El equipo de Etimex y HP Indigo</p>
