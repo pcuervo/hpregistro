@@ -80,9 +80,9 @@
 								<label class="span c-12" for="celular">Celular</label>
 							</div><!-- span c-3 -->
 							<div class="span c-3">
-								<input class="span c-4" name="dia"type="text" value="dd" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" data-validation="number">
-								<input class="span c-4" name="mes"type="text" value="mm" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" data-validation="number" >
-								<input class="span c-4" name="anio"type="text" value="aaaa" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" data-validation="number">
+								<input class="span c-4" name="dia"type="text" value="dd" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+								<input class="span c-4" name="mes"type="text" value="mm" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+								<input class="span c-4" name="anio"type="text" value="aaaa" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
 								<label class="span c-12" for="nacimiento">Fecha de nacimiento</label>
 							</div><!-- span c-3 -->
 
